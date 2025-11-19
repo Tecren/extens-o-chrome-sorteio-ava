@@ -1,116 +1,126 @@
 #painel-sorteio-forum-ava { 
-    position: fixed; 
-    top: 10px; 
-    right: 10px; 
-    width: 360px; 
-    background: #ffffff; 
-    color: #003300;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 360px;
+    background: #FFFFFF;
+    color: #44749d;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    border: 3px solid #003300;
-    border-radius: 10px;
+    border-radius: 12px;
     z-index: 999999;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 12px;
+    gap: 12px;
+    padding: 0;
+    overflow: hidden;
 }
 
 #painel-sorteio-forum-ava .psf-titulo {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
-    background: #01a50a;
-    color: #ffffff;
-    padding: 8px 12px;
-    border-radius: 6px;
+    background: #44749d;
+    color: #FFFFFF;
+    padding: 10px 14px;
     text-align: center;
-    letter-spacing: .5px;
-}
-
-#painel-sorteio-forum-ava .psf-barra-atualizar {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 8px;
-}
-
-#painel-sorteio-forum-ava .psf-barra-sorteios {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-}
-
-#painel-sorteio-forum-ava .psf-btn-atualizar {
-    width: 200px;
 }
 
 #painel-sorteio-forum-ava button {
-    background: #01a50a;
-    color: #ffffff;
-    border: 2px solid #003300;
-    padding: 8px 10px;
-    border-radius: 6px;
+    background: #C6D4E1;
+    color: #44749d;
+    border: none;
+    padding: 9px 10px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
-    transition: background .2s, transform .15s;
+    transition: transform .15s, border .2s;
+    border: 2px solid transparent;
 }
 
 #painel-sorteio-forum-ava button:hover {
-    background: #003300;
     transform: translateY(-2px);
+    border: 2px solid #44749d;
 }
 
 #painel-sorteio-forum-ava button:active {
     transform: translateY(0);
 }
 
+#painel-sorteio-forum-ava .psf-barra-atualizar {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#painel-sorteio-forum-ava .psf-barra-sorteios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 0 12px;
+}
+
 #painel-sorteio-forum-ava .psf-autores {
-    background: #ffffff;
-    color: #003300;
-    padding: 8px;
-    border: 1px solid #01a50a;
-    border-radius: 6px;
-    max-height: 110px;
+    background: #FFFFFF;
+    color: #44749d;
+    padding: 10px;
+    border: 2px solid #C6D4E1;
+    border-radius: 10px;
+    max-height: 120px;
     overflow-y: auto;
     font-size: 13px;
+    margin: 0 12px;
 }
 
 #painel-sorteio-forum-ava .psf-resultados {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-height: 240px;
+    max-height: 250px;
     overflow-y: auto;
+    padding: 0 12px 12px;
 }
 
 #painel-sorteio-forum-ava .psf-cabecalho {
     font-weight: 700;
-    color: #003300;
-    border-left: 6px solid #01a50a;
-    padding-left: 6px;
+    color: #44749d;
+    border-left: 6px solid #C6D4E1;
+    padding-left: 8px;
 }
 
 #painel-sorteio-forum-ava .psf-grupo {
-    border: 2px solid #01a50a;
-    border-radius: 8px;
-    padding: 8px;
-    background: #ffffff;
+    border: 2px solid #C6D4E1;
+    border-radius: 10px;
+    padding: 10px;
+    background: #FFFFFF;
 }
 
 #painel-sorteio-forum-ava .psf-grupo-titulo {
     font-weight: 700;
-    color: #003300;
+    color: #44749d;
     margin-bottom: 4px;
-}
-
-#painel-sorteio-forum-ava .psf-grupo-lista {
-    line-height: 1.35;
-    color: #003300;
 }
 
 #painel-sorteio-forum-ava .psf-rodape {
     font-size: 12px;
     text-align: right;
-    color: #003300;
+    color: #44749d;
     opacity: .85;
+}
+
+#painel-sorteio-forum-ava .psf-autores::-webkit-scrollbar,
+#painel-sorteio-forum-ava .psf-resultados::-webkit-scrollbar {
+    width: 8px;
+}
+
+#painel-sorteio-forum-ava .psf-autores::-webkit-scrollbar-thumb,
+#painel-sorteio-forum-ava .psf-resultados::-webkit-scrollbar-thumb {
+    background: #C6D4E1;
+    border-radius: 6px;
+}
+
+#painel-sorteio-forum-ava .psf-autores::-webkit-scrollbar-thumb:hover,
+#painel-sorteio-forum-ava .psf-resultados::-webkit-scrollbar-thumb:hover {
+    background: #44749d;
 }
